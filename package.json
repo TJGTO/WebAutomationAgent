@@ -1,0 +1,28 @@
+{
+  "name": "browseragent",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
+    "dev:enhanced": "nodemon --watch src --exec ts-node src/index.ts -- --enhanced",
+    "start": "ts-node src/index.ts",
+    "start:enhanced": "ts-node src/index.ts --enhanced",
+    "build": "tsc",
+    "serve": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  },
+  "ts-node": {
+    "esm": false,
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}

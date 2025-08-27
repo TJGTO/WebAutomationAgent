@@ -1,1 +1,1 @@
-<video controls src="screen-recording-of-browseragent.mp4" title="Title"></video>
+[Watch the demo video](./screen-recording-of-browseragent.mp4)
